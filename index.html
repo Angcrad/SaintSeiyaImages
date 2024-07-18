@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Image Gallery</title>
+</head>
+<body>
+  <!--<h1>Image Gallery</h1>-->
+
+    <div class="gallery" onclick="openLightbox(event)">
+		<img class="imggallery" src="01-pegasusSeiyaV1.png">
+		<img class="imggallery" src="02-dragonV1Shiryu.png">
+		<img class="imggallery" src="03-cygnusHyogaV1.png">
+		<img class="imggallery" src="04-andromedaShunV1.png">
+		<img class="imggallery" src="05-phoenixIkkiV1.png">
+		<img class="imggallery" src="06-unicornJabu.png">
+		<img class="imggallery" src="07-GalacticTournamentSagitarious.png">
+		<img class="imggallery" src="08-blackPegasusV1.png">
+		<img class="imggallery" src="09-blackDragonV1.png">
+		<img class="imggallery" src="10-BlackCygnusV1.png">
+		<img class="imggallery" src="11-blackAndromedaV1.png">
+		<img class="imggallery" src="12-blackPhoenixV1.png">
+		<img class="imggallery" src="13-eagleMarin.png">
+		<img class="imggallery" src="14-ophiuchusShaina.png">
+		<img class="imggallery" src="15-skySho.png">
+		<img class="imggallery" src="16-marineUshio.png">
+		<img class="imggallery" src="17-landDaichi.png">
+		<img class="imggallery" src="18-lizardMisty.png">
+		<img class="imggallery" src="19-perseusAlgol.png">
+		<img class="imggallery" src="20-ariesMu.png">
+		<img class="imggallery" src="21-tauroAldebaran.png">
+		<img class="imggallery" src="22-geminiSaga.png">
+		<img class="imggallery" src="23-cancerDeathmask.png">
+		<img class="imggallery" src="24-leoAiolia.png">
+		<img class="imggallery" src="25-virgoShaka.png">
+		<img class="imggallery" src="26-libraDohko.png">
+		<img class="imggallery" src="27-scorpioMilo.png">
+		<img class="imggallery" src="28-sagittariusAiolos.png">
+		<img class="imggallery" src="29-capricornShura.png">
+		<img class="imggallery" src="30-aquariousCamus.png">
+		<img class="imggallery" src="31-piscesAphrodite.png">
+		<img class="imggallery" src="32-pegasusSeiyaV2.png">
+		<img class="imggallery" src="33-dragonShiryuV2.png">
+		<img class="imggallery" src="34-cygnusHyogaV2.png">
+		<img class="imggallery" src="35-andromedaV2Shun.png">
+		<img class="imggallery" src="36-phoenixV2Ikki.png">
+		<img class="imggallery" src="37-goldPegasusSeiyaV2.png">
+		<img class="imggallery" src="38-goldDragonShiryuV2.png">
+		<img class="imggallery" src="39-goldCygnusHyogaV2.png">
+		<img class="imggallery" src="40-goldAndromedaShunV2.png">
+		<img class="imggallery" src="41-goldPhoenixIkkiV2.png">
+		<img class="imggallery" src="42-dubheAlphaSiegfried.png">
+		<img class="imggallery" src="43-merakBetaHagen.png">
+		<img class="imggallery" src="44-phecdaGammaThor.png">
+		<img class="imggallery" src="45-megrezDeltaAlberich.png">
+		<img class="imggallery" src="46-aliothEpsilonFenrir.png">
+		<img class="imggallery" src="47-mizarZetaSyd.png">
+		<img class="imggallery" src="48-alcorZetaBud.png">
+		<img class="imggallery" src="49-benetnashEtaMime.png">
+		<img class="imggallery" src="50-odin.png">
+		<img class="imggallery" src="51-mermaidThetis.png">
+		<img class="imggallery" src="52-sireneSorento.png">
+		<img class="imggallery" src="53-seaDragonKanon.png">
+		<img class="imggallery" src="54-seaHorseBian.png">
+		<img class="imggallery" src="55-scyllaIo.png">
+		<img class="imggallery" src="56-chrysaorKrishna.png">
+		<img class="imggallery" src="57-lymnadesKasa.png">
+		<img class="imggallery" src="58-krakenIsaak.png">
+		<img class="imggallery" src="59-poseidon.png">
+		<img class="imggallery" src="60-sagittariusSeiya.png">
+		<img class="imggallery" src="61-libraShiryu.png">
+		<img class="imggallery" src="62-aquariusHyoga.png">
+		<img class="imggallery" src="63-ariesShionSappuri.png">
+		<img class="imggallery" src="64-geminiSagaSappuri.png">
+		<img class="imggallery" src="65-cancerDeathmaskSappuri.png">
+		<img class="imggallery" src="66-capricornShuraSappuri.png">
+		<img class="imggallery" src="67-aquariusCamusSappuri.png">
+		<img class="imggallery" src="68-piscesAphroditeSappuri.png">
+		<img class="imggallery" src="69-cyclopsGigant.png">
+		<img class="imggallery" src="70-papillonMyu.png">
+		<img class="imggallery" src="71-wyvernRhadamanthys.png">
+    </div>
+
+    <!-- Lightbox container -->
+    <div id="lightbox">
+        <!-- Close button -->
+        <span id="close-btn" onclick="closeLightbox()">&times;</span>
+
+        <!-- Main lightbox image -->
+        <img id="lightbox-img" src="" alt="lightbox image">
+		<ul class="horizontal-slide">
+			<li>
+				<!-- Thumbnails container -->
+				<div id="thumbnail-container">
+					<!-- Thumbnails will be added dynamically using JavaScript -->
+				</div>
+			</li>
+		</ul> 
+        <!-- Previous and Next buttons -->
+        <button id="prev-btn" onclick="changeImage(-1)">&lt; Prev</button>
+        <button id="next-btn" onclick="changeImage(1)">Next &gt;</button>
+    </div>
+	<script src="script.js"></script>
+</body>
+</html>
