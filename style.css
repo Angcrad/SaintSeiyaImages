@@ -27,7 +27,7 @@
         .gallery img {
             margin: 10px;
             cursor: pointer;
-            max-width: 300px;
+            max-width: 20vw;
             width: 50%;
             height: 50%;
           border-radius: 10px;
